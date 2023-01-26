@@ -9,7 +9,10 @@ def eat_ghost(power_pellet_active, touching_ghost):
     :return: bool - can the ghost be eaten?
     """
 
-    pass
+    if (power_pellet_active and touching_ghost):
+        return True
+    else:
+        return False
 
 
 def score(touching_power_pellet, touching_dot):
